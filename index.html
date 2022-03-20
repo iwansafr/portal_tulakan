@@ -46,7 +46,7 @@
         <h1>Hallo, <span></span></h1>
         <h1>Selamat Datang di  <span></span></h1>
         <h1>PORTAL LAYANAN DIGITAL <span></span></h1>
-        <a href="#services" type="button" class="cta">KLICK PORTAL</a>
+        <a href="#services" type="button" onclick="playaudio()" class="cta">KLICK PORTAL</a>
       </div>
     </div>
   </section>
@@ -151,6 +151,12 @@
   </section>
   <!-- End Footer -->
   <script src="./app.js"></script>
+  <script>
+    let audio = new Audio('menu_portal.mp3')
+    function playaudio(){
+      audio.play()
+    }
+  </script>
 </body>
 
 </html>
